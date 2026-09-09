@@ -288,7 +288,7 @@ textarea {
   transition: background 0.3s;
 }
 .home-hero__social-icon-link:hover {
-  background: rgba(255, 255, 255, .);
+  background: rgba(255, 255, 255, .25);
 }
 .home-hero__social-icon-link--bd-none {
   border-bottom: 0;
@@ -363,7 +363,7 @@ textarea {
 
 .projects__row {
   display: grid;
-  grid-template-columns: 1.5fr 1.1fr;
+  grid-template-columns: 1.1fr 1.5fr;
   grid-gap: 5rem;
   margin-bottom: 10rem;
 }
@@ -380,7 +380,8 @@ textarea {
   }
 }
 .projects__row:nth-child(even){
-  grid-template-columns: 1.1fr 1.5fr;  
+  direction:rtl;
+  /*grid-template-columns: 1.1fr 1.5fr;  */
 }
 @media only screen and (max-width: 56.25em) {
   .projects__row:nth-child(even) {
@@ -408,6 +409,7 @@ textarea {
 }
 .projects__row-content {
   display: flex;
+  direction:ltr;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
